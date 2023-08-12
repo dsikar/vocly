@@ -1,4 +1,4 @@
-![vocly logo](images/logo-color.png)
+![vocly logo](images/logo-no-background.png)
 
 <!-- <div style="display: flex; justify-content: center; align-items: center;">
     <img src="images/logo-color.png" width=300 height=260/>
