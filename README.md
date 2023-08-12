@@ -1,8 +1,8 @@
-<!-- ![vocly logo](images/logo-color.png) -->
+![vocly logo](images/logo-color.png)
 
-<div style="display: flex; justify-content: center; align-items: center;">
+<!-- <div style="display: flex; justify-content: center; align-items: center;">
     <img src="images/logo-color.png" width=300 height=260/>
-</div>
+</div> -->
 
 Tired of endless clicking and typing? There's a better way to interact with your devices - through the power of your own voice! Introducing Vocly, the revolutionary app that allows you to control your computer completely hands-free using natural speech. 
 
