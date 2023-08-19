@@ -65,6 +65,12 @@ echo myenv > .python-version
 # check the correct version is installed
 python --version
 
+# additional update pip
+python -m pip install --upgrade pip
+
+# add setuptools and wheel
+pip install --upgrade pip setuptools wheel
+
 ```
 
 ## Workflow
