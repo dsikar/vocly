@@ -38,6 +38,40 @@ A work-in-progress project to create a conversational AI using OpenAI's ChatGPT 
 4. Set up your API keys:
    - OpenAI API key: Set as an environment variable or directly in the `text-to-chatgpt.py` script.
    - Google Cloud Voice-to-Text and Text-to-Voice API keys: Download the `.json` key files and set their paths in the respective scripts.
+  
+5. Create your virtual environment
+```
+# Download pyenv directly into the correct location
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+# Modify your .bashrc file, add the following lines to the bottonm of the .bashrc file
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/.pyenv/bin:$PATH"
+
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Reread .bashrc by running
+exec bash
+
+# create a virtual environment
+pyenv virtualenv 3.9.5 myenv
+
+# create the virtual environment in the repo top level directory
+echo myenv > .python-version
+
+# prompt should now be prefixed with (mypy3.9.5)
+# check the correct version is installed
+python --version
+
+# additional update pip
+python -m pip install --upgrade pip
+
+# add setuptools and wheel
+pip install --upgrade pip setuptools wheel
+
+```
 
 ## Workflow
 
