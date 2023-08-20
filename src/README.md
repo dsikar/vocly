@@ -45,9 +45,9 @@ A work-in-progress project to create a conversational AI using OpenAI's ChatGPT 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 # Modify your .bashrc file, add the following lines to the bottonm of the .bashrc file
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv/bin:$PATH"
-
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -74,6 +74,8 @@ python -m pip install --upgrade pip
 # add setuptools and wheel
 pip install --upgrade pip setuptools wheel
 
+# install required modules
+pip install -r requirements.txt
 ```
 
 ## Workflow
