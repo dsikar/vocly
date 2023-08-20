@@ -55,13 +55,16 @@ eval "$(pyenv virtualenv-init -)"
 # Reread .bashrc by running
 exec bash
 
+# install python 3.9.5
+pyenv install 3.9.5
+
 # create a virtual environment
 pyenv virtualenv 3.9.5 myenv
 
 # create the virtual environment in the repo top level directory
 echo myenv > .python-version
 
-# prompt should now be prefixed with (mypy3.9.5)
+# prompt should now be prefixed with (myenv)
 # check the correct version is installed
 python --version
 
