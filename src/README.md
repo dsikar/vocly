@@ -55,6 +55,9 @@ eval "$(pyenv virtualenv-init -)"
 # Reread .bashrc by running
 exec bash
 
+# install required libraries
+sudo apt-get install -y build-essential libffi-dev libssl-dev zlib1g-dev liblzma-dev libbz2-dev libreadline-dev libsqlite3-dev
+
 # install python 3.9.5
 pyenv install 3.9.5
 
