@@ -77,6 +77,9 @@ python -m pip install --upgrade pip
 # add setuptools and wheel
 pip install --upgrade pip setuptools wheel
 
+# install pyaudio
+sudo apt install python3-pyaudio
+
 # install required modules
 pip install -r requirements.txt
 ```
