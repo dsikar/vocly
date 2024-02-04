@@ -103,7 +103,8 @@ pip install -r requirements.txt
 2. **voice-to-text.py**: Converts the recorded audio to text using Google Cloud's Voice-to-Text API.
 3. **text-to-chatgpt.py**: Sends the text to ChatGPT using the OpenAI API and gets a textual response.
 4. **text-to-voice.py**: Converts the ChatGPT response to audio using Google Cloud's Text-to-Voice API.
-
+5. **python language_model_gui.py**: 1. to 4. combined.
+   
 ## Usage
 
 1. Start by recording your voice:
