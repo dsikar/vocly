@@ -12,4 +12,4 @@ Why struggle with memorizing keyboard shortcuts or clicking through menus? Take 
 
 Give Vocly a try and transform how you interface with your digital world. Voice control is the new way forward. 
 
-To run our proof-of-concept see our source code [src/README.md](README.md)
+To run our proof-of-concept see our source code [README.md](src/README.md)
