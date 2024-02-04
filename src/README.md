@@ -50,9 +50,9 @@ Note 2. and 3. can be combined in the Google Cloud services.
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 # Modify your .bashrc file, add the following lines to the bottonm of the .bashrc file
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv/bin:$PATH"
-
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -60,13 +60,19 @@ eval "$(pyenv virtualenv-init -)"
 # Reread .bashrc by running
 exec bash
 
+# install required libraries
+sudo apt-get install -y build-essential libffi-dev libssl-dev zlib1g-dev liblzma-dev libbz2-dev libreadline-dev libsqlite3-dev
+
+# install python 3.9.5
+pyenv install 3.9.5
+
 # create a virtual environment
 pyenv virtualenv 3.9.5 myenv
 
 # create the virtual environment in the repo top level directory
 echo myenv > .python-version
 
-# prompt should now be prefixed with (mypy3.9.5)
+# prompt should now be prefixed with (myenv)
 # check the correct version is installed
 python --version
 
@@ -76,6 +82,11 @@ python -m pip install --upgrade pip
 # add setuptools and wheel
 pip install --upgrade pip setuptools wheel
 
+# install pyaudio
+sudo apt install python3-pyaudio
+
+# install required modules
+pip install -r requirements.txt
 ```
 
 ## Workflow
