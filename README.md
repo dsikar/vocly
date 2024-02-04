@@ -10,4 +10,6 @@ Just talk naturally and Vocly will understand your requests and take actions for
 
 Why struggle with memorizing keyboard shortcuts or clicking through menus? Take back your time and boost your productivity by speaking to your computer instead. Vocly brings you effortless voice control for work, creativity, and efficiency. The future is here - interact with your devices quickly, conveniently, and intuitively using your voice with Vocly. Start accomplishing more each day simply by speaking. The power of your voice is now in your hands!
 
-Give Vocly a try and transform how you interface with your digital world. Voice control is the new way forward.
+Give Vocly a try and transform how you interface with your digital world. Voice control is the new way forward. 
+
+To run our proof-of-concept see our source code [src/README.md](README.md)
