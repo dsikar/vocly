@@ -3,7 +3,8 @@ from google.cloud import texttospeech_v1 as texttospeech
 from playsound import playsound
 
 # Set up Google Cloud authentication
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/daniel/.ssh/vocly-395719-166a8748da49.json'
+# Note that the environment variable GOOGLE_APPLICATION_CREDENTIALS must be set to the path of the JSON file that contains your service account key.
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS']
 
 # Initialize the Text-to-Speech client
 client = texttospeech.TextToSpeechClient()
