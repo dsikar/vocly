@@ -6,7 +6,8 @@ from google.cloud import speech_v1p1beta1 as speech
 from google.cloud.speech_v1p1beta1 import types
 
 # Set up Google Cloud authentication
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/daniel/.ssh/vocly-395719-166a8748da49.json'
+# Note that the environment variable GOOGLE_APPLICATION_CREDENTIALS must be set to the path of the JSON file that contains your service account key.
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS']
 
 # Initialize the Speech client
 client = speech.SpeechClient()
