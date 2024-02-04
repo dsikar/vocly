@@ -1,7 +1,8 @@
 import openai
+import os
 
 # Set up your API token
-openai.api_key = "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"
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # Submit a prompt to ChatGPT
 response = openai.Completion.create(
