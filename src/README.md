@@ -1,20 +1,25 @@
 # Conversational AI
 
-A work-in-progress project to create a conversational AI using OpenAI's ChatGPT and Google Cloud's Voice-to-Text and Text-to-Voice services.
+A proof-of-concept to create a conversational AI using OpenAI's API and Google Cloud's Voice-to-Text and Text-to-Voice services.
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-- [Setup](#setup)
-- [Workflow](#workflow)
-- [Usage](#usage)
-- [Future Enhancements](#future-enhancements)
+- [Conversational AI](#conversational-ai)
+  - [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Workflow](#workflow)
+  - [Proof-of-concept](#proof-of-concept)
+  - [Usage](#usage)
+  - [Future Enhancements](#future-enhancements)
 
 ## Requirements
 
 1. OpenAI API key
 2. Google Cloud Voice-to-Text API key
 3. Google Cloud Text-to-Voice API key
+
+Note 2. and 3. can be combined in the Google Cloud services.
 
 ## Setup
 
@@ -36,7 +41,7 @@ A work-in-progress project to create a conversational AI using OpenAI's ChatGPT 
    ```
 
 4. Set up your API keys:
-   - OpenAI API key: Set as an environment variable or directly in the `text-to-chatgpt.py` script.
+   - OpenAI API key: Set as an environment variable or directly in the `language_model_gui.py` script.
    - Google Cloud Voice-to-Text and Text-to-Voice API keys: Download the `.json` key files and set their paths in the respective scripts.
   
 5. Create your virtual environment
@@ -81,6 +86,8 @@ pip install --upgrade pip setuptools wheel
   +-------------+         +----------------+         +------------------+         +--------------+
 ```
 
+## Proof-of-concept
+
 1. **record.py**: Records user's voice input and saves it as an audio file.
 2. **voice-to-text.py**: Converts the recorded audio to text using Google Cloud's Voice-to-Text API.
 3. **text-to-chatgpt.py**: Sends the text to ChatGPT using the OpenAI API and gets a textual response.
@@ -107,6 +114,11 @@ pip install --upgrade pip setuptools wheel
    ```bash
    python text-to-voice.py
    ```
+   
+5. Run the GUI
+   ```bash
+   python language_model_gui.py
+   ```   
 
 ## Future Enhancements
 

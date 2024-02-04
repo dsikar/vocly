@@ -57,7 +57,8 @@ class LanguageModelAssistant:
         from google.cloud.speech_v1p1beta1 import types
 
         # Set up Google Cloud authentication
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/daniel/.ssh/vocly-395719-166a8748da49.json'
+        # Note that the environment variable GOOGLE_APPLICATION_CREDENTIALS must be set to the path of the JSON file that contains your service account key.
+        # os.environ['GOOGLE_APPLICATION_CREDENTIALS']
 
         # Initialize the Speech client
         client = speech.SpeechClient()
@@ -98,9 +99,11 @@ class LanguageModelAssistant:
 
     def text_to_chatgpt(self):   
         import openai
+        import os
 
         # Set up your API token
-        openai.api_key = "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"
+        # note that the environment variable OPENAI_API_KEY must be set to your API key
+        openai.api_key = os.getenv('OPENAI_API_KEY')
 
         # Open the text file containing the prompt
         with open('transcription.txt', 'r') as f:
@@ -135,7 +138,8 @@ class LanguageModelAssistant:
         from playsound import playsound
 
         # Set up Google Cloud authentication
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/daniel/.ssh/vocly-395719-166a8748da49.json'
+        # Note that the environment variable GOOGLE_APPLICATION_CREDENTIALS must be set to the path of the JSON file that contains your service account key.
+        # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] 
 
         # Initialize the Text-to-Speech client
         client = texttospeech.TextToSpeechClient()
